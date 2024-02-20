@@ -9,15 +9,17 @@ function calcAge(birthYear) {
 
     if (birthYear >= 1981 && birthYear <= 1996) {
       var millenial = true;
+      // creating NEW variable with the same name as outer scope variables
       const firstName = 'Steven';
+
+      // reassinging outer scope's variable
+      output = 'NEW OUTPUT';
       const str = `oh, and you're a millenial, ${firstName}`;
       console.log(str);
 
       function add(a, b) {
         return a + b;
       }
-
-      const output = 'NEW OUTPUT';
     }
 
     // console.log(str);
