@@ -36,6 +36,26 @@
 
 //HOISTING
 
+//variables
+// console.log(me);
+// console.log(job);
+// console.log(year);
+
 var me = 'Jons';
 let job = 'teacher';
 const year = 1991;
+
+// funnctions
+console.log(addDecl(2, 3));
+// console.log(addExpr(2, 3));
+console.log(addArrow(a, b));
+
+function addDecl(a, b) {
+  return a + b;
+}
+
+const addExpr = function (a, b) {
+  return a + b;
+};
+
+var addArrow = (a, b) => a + b;
