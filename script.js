@@ -113,3 +113,6 @@ const matilda = {
 matilda.calcAge = jonas.calcAge;
 // console.log(matilda);
 matilda.calcAge();
+
+const f = jonas.calcAge;
+f();
