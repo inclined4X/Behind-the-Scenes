@@ -170,7 +170,6 @@ var addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 5, 8);
-*/
 
 // Primitives vs Objects
 let age = 30;
@@ -188,3 +187,20 @@ const friend = me;
 friend.age = 27;
 console.log('friend:', friend);
 console.log('me:', me);
+*/
+
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Davies';
+console.log(lastName, oldLastName);
+
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davies';
+console.log('Before Marriage:', jessica);
+console.log('After marriage:', marriedJessica);
