@@ -118,6 +118,7 @@ matilda.calcAge();
 const f = jonas.calcAge;
 f();
 */
+var firstName = 'Matilda';
 
 const jonas = {
   firstName: 'Jonas',
@@ -127,7 +128,11 @@ const jonas = {
     console.log(2037 - this.year);
   },
 
-  greet: () => console.log(`Hey ${this.firstName}`),
+  greet: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
 };
 
 jonas.greet();
+console.log(this.firstName);
