@@ -118,14 +118,20 @@ matilda.calcAge();
 const f = jonas.calcAge;
 f();
 */
-var firstName = 'Matilda';
+// var firstName = 'Matilda';
 
 const jonas = {
   firstName: 'Jonas',
   year: 1991,
   calcAge: function () {
-    console.log(this);
+    // console.log(this);
     console.log(2037 - this.year);
+
+    const isMillenial = function () {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+    isMillenial();
   },
 
   greet: () => {
@@ -135,4 +141,5 @@ const jonas = {
 };
 
 jonas.greet();
-console.log(this.firstName);
+jonas.calcAge();
+// function inside a method
